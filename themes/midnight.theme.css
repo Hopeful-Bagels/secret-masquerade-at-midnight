@@ -31,8 +31,8 @@ body {
     --border-hover-transition: 0.2s ease; /* transition for borders when hovered */
 
     /* top bar options */
-    --top-bar-height: 36px; /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
-    --top-bar-button-position: off; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
+    --top-bar-height: var(--gap); /* height of the top bar (discord default is 36px, old discord style is 24px, var(--gap) recommended if button position is set to titlebar) */
+    --top-bar-button-position: titlebar; /* off: default position, hide: hide buttons completely, serverlist: move inbox button to server list, titlebar: move inbox button to channel titlebar (will hide title) */
     --top-bar-title-position: off; /* off: default centered position, hide: hide title completely, left: left align title (like old discord) */
     --subtle-top-bar-title: off; /* off: default, on: hide the icon and use subtle text color (like old discord) */
 
@@ -54,7 +54,7 @@ body {
 
     /* background image options */
     --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url('https://cdn.discordapp.com/attachments/528061411306373150/1526027206189383832/Untitled523_20260712173822.png?ex=6a582a16&is=6a56d896&hm=74f43450ff51ef68487541ba8dbe7c0b71b829649220bcd8bb4d4175fdc41f28'); /* url of the background image */
+    --background-image-url: url('https://github.com/Hopeful-Bagels/secret-masquerade-at-midnight/assets/secret-masquerade-tsukasa-bg.png'); /* url of the background image */
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
