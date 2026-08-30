@@ -1,5 +1,5 @@
 /**
- * @name midnight
+ * @name midnight (background)
  * @description a dark, customizable discord theme.
  * @author refact0r
  * @version 2.1.1
@@ -41,31 +41,32 @@ body {
     --window-control-size: 14px; /* size of custom window controls */
 
     /* dms button options */
+
     --custom-dms-icon: custom; /* off: use default discord icon, hide: remove icon entirely, custom: use custom icon */
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
+    --dms-icon-svg-url: url('https://raw.githubusercontent.com/Hopeful-Bagels/secret-masquerade-at-midnight/refs/heads/master/assets/knights_logo.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
     --dms-icon-color-before: var(--icon-subtle); /* normal icon color */
     --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
     --custom-dms-background: off; /* off to disable, image to use a background image (must set url variable below), color to use a custom color/gradient */
     --dms-background-image-url: url(''); /* url of the background image */
     --dms-background-image-size: cover; /* size of the background image (css background-size property) */
-    --dms-background-color: linear-gradient(70deg, var(--blue-2), var(--purple-2), var(--red-2)); /* fixed color/gradient (css background property) */
+    --dms-background-color: #15ff00; /* fixed color/gradient (css background property) */
 
     /* background image options */
-    --background-image: off; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url(''); /* url of the background image */
+    --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
+    --background-image-url: url('https://cdn.discordapp.com/attachments/528061411306373150/1526027206189383832/Untitled523_20260712173822.png?ex=6a582a16&is=6a56d896&hm=74f43450ff51ef68487541ba8dbe7c0b71b829649220bcd8bb4d4175fdc41f28'); /* url of the background image */
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
-    --transparency-tweaks: off; /* off: no changes, on: remove some elements for better transparency */
+    --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
     --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
-    --panel-blur: off; /* off: no changes, on: blur the background of panels */
-    --blur-amount: 12px; /* amount of blur */
-    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    --panel-blur: on; /* off: no changes, on: blur the background of panels */
+    --blur-amount: 4px; /* amount of blur */
+    --bg-floating: #2b1936; /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
     /* chatbar options */
-    --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
-    --chatbar-height: 47px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
+    --custom-chatbar: separated; /* off: default chatbar, separated: chatbar separated from chat */
+    --chatbar-height: 56px; /* height of the chatbar (56px by default, 47px to align with user panel, 56px recommended for separated) */
 
     /* other options */
     --small-user-panel: on; /* off: default user panel, on: smaller user panel like in old discord */
@@ -76,34 +77,34 @@ body {
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: hsl(220, 45%, 95%); /* other normally white text */
-    --text-2: hsl(220, 25%, 70%); /* headings and important text */
-    --text-3: hsl(220, 20%, 60%); /* normal text */
-    --text-4: hsl(220, 15%, 40%); /* icon buttons and channels */
-    --text-5: hsl(220, 15%, 25%); /* muted channels/chats and timestamps */
+    --text-0: hsla(220, 15%, 10%, 1); /* text on colored elements */
+    --text-1: #FEFDFD; /* other normally white text */
+    --text-2: #ffffff; /* headings and important text */
+    --text-3: #d1cacb; /* normal text */
+    --text-4: #AEA9AA; /* icon buttons and channels */
+    --text-5: #7F7979; /* muted channels/chats and timestamps */
 
     /* background and dark colors */
-    --bg-1: hsla(220, 15%, 20%, 1); /* dark buttons when clicked */
-    --bg-2: hsla(220, 15%, 16%, 1); /* dark buttons */
-    --bg-3: hsla(220, 15%, 13%, 1); /* spacing, secondary elements */
-    --bg-4: hsla(220, 15%, 10%, 1); /* main background color */
-    --hover: hsla(221, 19%, 40%, 0.1); /* channels and buttons when hovered */
-    --active: hsla(220, 19%, 40%, 0.2); /* channels and buttons when clicked or selected */
-    --active-2: hsla(220, 19%, 40%, 0.3); /* extra state for transparent buttons */
-    --message-hover: hsla(220, 0%, 0%, 0.1); /* messages when hovered */
+    --bg-1: #E7AC46a9; /* dark buttons when clicked ebb96399*/
+    --bg-2: #b2603d99; /* dark buttons e29a1d79 */
+    --bg-3: #611834c2; /* spacing, secondary elements */
+    --bg-4: #2b1936e5; /* main background color c4 */
+    --hover: #c34760b0; /* channels and buttons when hovered */
+    --active: #942343b0; /* channels and buttons when clicked or selected */
+    --active-2: #1eff00; /* extra state for transparent buttons */
+    --message-hover: #1E132599; /* messages when hovered */
 
     /* accent colors */
-    --accent-1: var(--blue-1); /* links and other accent text */
-    --accent-2: var(--blue-2); /* small accent elements */
-    --accent-3: var(--blue-3); /* accent buttons */
-    --accent-4: var(--blue-4); /* accent buttons when hovered */
-    --accent-5: var(--blue-5); /* accent buttons when clicked */
-    --accent-new: var(--accent-2); /* stuff that's normally red like mute/deafen buttons */
-    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 40%, transparent); /* background of messages that mention you */
-    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 40%, transparent); /* background of messages that mention you when hovered */
-    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 40%, transparent); /* background of messages that reply to you */
-    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent); /* background of messages that reply to you when hovered */
+    --accent-1: #5F98CE; /* links and other accent text */
+    --accent-2: #3777B4ea; /* small accent elements */
+    --accent-3: #F4D37Be0; /* accent buttons */
+    --accent-4: #C19210e0; /* accent buttons when hovered */
+    --accent-5: #e7738e; /* accent buttons when clicked */
+    --accent-new: #e07b98; /* stuff that's normally red like mute/deafen buttons */
+    --mention: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 90%) 20%, transparent); /* background of messages that mention you */
+    --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--accent-2), transparent 95%) 20%, transparent); /* background of messages that mention you when hovered */
+    --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 90%) 20%, transparent); /* background of messages that reply to you */
+    --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 20%, transparent); /* background of messages that reply to you when hovered */
 
     /* status indicator colors */
     --online: var(--green-2); /* change to #40a258 for default */
@@ -113,10 +114,10 @@ body {
     --offline: var(--text-4); /* change to #82838b for default offline color */
 
     /* border colors */
-    --border-light: var(--hover); /* general light border color */
-    --border: var(--active); /* general normal border color */
-    --border-hover: var(--active); /* border color of panels when hovered */
-    --button-border: hsl(220, 0%, 100%, 0.1); /* neutral border color of buttons */
+    --border-light: #E4B5D141; /* general light border color */
+    --border: #E4B5D141; /* general normal border color */
+    --border-hover: #e4b5d1a2; /* border color of panels when hovered */
+    --button-border: #611834; /* neutral border color of buttons */
 
     /* base colors */
     --red-1: oklch(75% 0.12 0);
@@ -148,4 +149,11 @@ body {
     --purple-3: oklch(65% 0.11 310);
     --purple-4: oklch(60% 0.11 310);
     --purple-5: oklch(55% 0.11 310);
+}
+/* --- GLOBAL CLAN TAG BACKGROUNDS (EVERYWHERE) --- */
+[class*="clanTagChiplet_"], 
+[class*="chipletContainer_"],
+[class*="messageChipletContainer_"],
+[class*="chipletContainerInner_"] {
+    background-color: #ebb963d3 !important; /* Your global background color */
 }
